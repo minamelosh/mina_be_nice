@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Please Register</h1>
+  <h3>Create a unique User name and password</h3>
+  </br></br>
+   <form action="/users" method="post">
+
+     User Name: <input type="text" name="user[user_name]"><br><br>
+     Email: <input type="text" name="user[email]"><br><br>
+     Password: <input type="password" name="user[password]"><br><br>
+     <input type="submit" value="Submit"><br/><br/><br/>
+
+     <%= erb :'_errors' %>
+   </form>
+</div>

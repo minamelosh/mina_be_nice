@@ -1,0 +1,44 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 30px 30px 30px;
+  border: 2px dotted red;
+}
+th {
+  text-align: left;
+}
+h1 {
+  color: #FF1493;
+}
+h2 {
+  color: #FF00FF;
+}
+
+.info {
+  width: 100%;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.image-list {
+  list-style-type: none;
+}
+.items{
+  padding: 12px 20px;
+}
+li {
+  color: #FF1493;
+}
+input {
+  color: #FF1493;
+}
+button {
+  color: #FF00FF;
+}
+a {
+  color: #EE82EE;
+}
+form {
+  margin: 20px auto;
+}

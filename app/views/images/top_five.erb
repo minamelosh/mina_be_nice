@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Hello! Here are 5 current top trending images!</h1>
+
+  <ul class="image-list">
+
+    <% @top_five.each do |image| %>
+    <li>
+      <img src="<%= image.fixed_width_image.url %>">
+      <% if logged_in? %>
+      <form method="post" action="/users/<%= current_user.id %>/images" >
+       <input type="hidden" name="image[url]" value="<%=  image.fixed_width_image.url %>">
+       <input type="hidden" name="image[user_id]" value="<%= current_user.id %>">
+       <input name="commit" type="submit" value="Save this to your images!">
+       <br><br>
+     </form>
+     <% end %>
+   </li>
+   <% end %>
+
+ </ul>
+
+</div>

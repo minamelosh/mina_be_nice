@@ -1,0 +1,16 @@
+<div class="container">
+  <h1> Please Login </h1>
+  <form method = "post" action = "/login">
+    <label>User name:</label>
+    <input type = "text" name = "user[user_name]">
+  </br></br>
+
+    <label>Password:</label>
+    <input type = "password" name = "user[hashed_password]">
+  </br></br>
+
+    <input type = "submit", value = "Login">
+  </form>
+
+  <%= erb :'_errors' %>
+</div>

@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Welcome to Pix Mix! </h1>
+  <h1>Don't leave until you get your Fix!</h1>
+  <h2>We got pictures for dayz!</h2>
+
+  <h3>Random Pic! Do you like it?!</h3>
+  <ul>
+
+   <!-- erb :'items/index'  -->
+   <img src="<%= @image_url %>">
+
+   <% if logged_in? %>
+   <form method="post" action="/users/<%= current_user.id %>/images" >
+     <input type="hidden" name="image[url]" value="<%= @image_url %>">
+     <input type="hidden" name="image[user_id]" value="<%= current_user.id %>">
+     <input name="commit" type="submit" value="Save this to your images!">
+   </form>
+   <% end %>
+
+   <a href="/images/top_five">Click here to check out some trending pix!</a>
+
+ </ul>
+
+
+</div>
