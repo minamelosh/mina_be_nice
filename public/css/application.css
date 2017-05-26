@@ -1,7 +1,7 @@
 .container {
   margin: 20px auto;
   width: 600px;
-  padding: 0px 30px 30px 30px;
+  padding: 0px 10px 30px 10px;
   border: 2px dotted red;
 }
 th {
